@@ -49,9 +49,9 @@
 
 <script>
 import axios from 'axios';
-const port = import.meta.env.VITE_PORT
 
-const API_URL = 'http://localhost:${port}/api';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4002/api';
+
 
 export default {
   data() {
